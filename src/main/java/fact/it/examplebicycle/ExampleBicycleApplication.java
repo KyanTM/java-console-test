@@ -5,6 +5,8 @@ import fact.it.examplebicycle.model.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 public class ExampleBicycleApplication {
 
@@ -32,7 +34,18 @@ public class ExampleBicycleApplication {
         System.out.println("Email: " + student.getEmailAddress());
 
 
+
+        double myNumber = 15.6;
+        ArrayList <Double> arrayList = new ArrayList<>();
+        arrayList.add(50.0);
+        arrayList.add(myNumber);
+        double number = arrayList.get(1);
+        System.out.println(number);
+        arrayList.set(1, arrayList.get(0));
+        System.out.println(arrayList);
+
         System.exit(0);
+
 
 
 
