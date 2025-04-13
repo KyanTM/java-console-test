@@ -41,7 +41,7 @@ jobs:
     needs: deliver-jar
     steps: 
       - name: Download JAR artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: jar-files
           path: ./build
